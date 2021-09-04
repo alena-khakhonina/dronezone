@@ -46,6 +46,7 @@ h2.section-title {
     background: linear-gradient( 51deg, rgb(203,0,53) 0%, rgb(224,105,0) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     max-width: fit-content;
     margin-bottom: 30px;
 }
@@ -239,6 +240,8 @@ p.intro__subtitle {
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
+    margin: 0;
+    list-style-type: none;
 }
 
 .advantages-item {
@@ -262,7 +265,8 @@ p.intro__subtitle {
     margin-bottom: 10px;
     background: linear-gradient( 51deg, rgb(203,0,53) 0%, rgb(224,105,0) 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;    
+    -webkit-text-fill-color: transparent; 
+    background-clip: text;   
 }
 
 .advantages-item__description {
@@ -397,7 +401,7 @@ p.intro__subtitle {
     align-items: center;
 }
 
-.newsletter__inner h2 {
+.newsletter__inner-title {
     color: #fff;
     margin-bottom: 40px
 }
@@ -449,8 +453,10 @@ p.intro__subtitle {
 }
 
 .footer {
-    padding: 60px 0 260px;
+    display: flex;
+    align-items: center;
     text-align: center;
+    height: 300px;
 }
 
 .footer p {
